@@ -1,59 +1,176 @@
-# JEB
-> The Industrial Modern Browser with a Native AI Shadow Engine.
 
-JEB is a minimalist, high-performance browser designed by **Enmero Research** ([www.enmero.in](https://www.enmero.in)). It combines a sleek, premium aesthetic with a powerful background layer known as the **Shadow Engine**, allowing for seamless human-AI collaboration.
+<p align="center">
+  <img src="public/logo.png" alt="JEB Logo" width="180"/>
+</p>
 
-![JEB Logo](logo.png)
+<h1 align="center">JEB</h1>
 
-## ✨ Core Features
+<p align="center">
+  <strong>An Industrial Modern Browser with a Native AI Shadow Engine</strong>
+</p>
 
-- **Industrial Modern Aesthetic**: Deep dark modes, glassmorphism, and cinematic entrance animations.
-- **Shadow Engine (AI Path)**: A headless Chromium-based engine that extracts semantic meaning from the web.
-- **Background Intelligence**: Discovery context cards that provide deep insights into your searches.
-- **Native Extension CLI**: Control your browser from the terminal or connect external AI agents.
+<p align="center">
+  Browser for You · Browser for Your AI
+</p>
 
-## 🛠️ Getting Started
+## What is JEB?
 
-### Installation
+**JEB is an open-source dual-layer browser.**
+
+It separates:
+
+*  **Human browsing** (clean, high-performance UI)
+*  **AI browsing** (a headless semantic engine running in parallel)
+
+While you navigate visually, JEB’s Shadow Engine analyzes the page structure, extracts meaning, and makes it available as structured data.
+
+The web — but machine-readable.
+
+
+## Why JEB?
+
+Most browsers render pixels.
+JEB also extracts intent.
+
+This makes it useful for:
+
+* AI-assisted research
+* Automation workflows
+* Structured data extraction
+* Agent-driven browsing
+* Experimental human–AI collaboration
+
+
+## Core Features
+
+### Human Path
+
+* Minimal, distraction-free interface
+* Industrial dark-mode aesthetic
+* Smooth motion design
+* Fast omnibar navigation
+
+###  Shadow Engine (AI Path)
+
+* Headless Chromium processing
+* Semantic DOM parsing
+* AI Node ID assignment
+* Cognitive compression (removes layout noise & ads)
+* Structured JSON output
+
+###  Universal AI Bridge
+
+* Local HTTP server (`localhost:3030`)
+* Connect external AI agents
+* Navigate, click, extract via Node IDs
+
+###  CLI (Alpha)
+
+Control JEB from your terminal.
+
+
+
+## Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/enmero/jeb-browser.git
-
-# Install dependencies
+cd jeb-browser
 npm install
-
-# Run in development mode
 npm run dev
 ```
 
-### Using the CLI (Alpha)
 
-JEB comes with a powerful terminal interface for background browsing:
+
+## CLI Usage (Alpha)
+
+Register alias:
 
 ```bash
-# Register the jeb alias
 node jeb.js install
-
-# Search semantically in the background
-jeb search "apple.com"
-
-# The browser will analyze the page semantically and return:
-# - Page Intent
-# - Entity extraction (prices, dates, products)
-# - Interactive Node IDs (for AI automation)
 ```
 
-## 🧠 AI Path Notice
+Run a semantic search:
 
-**The AI Path (Autonomous Browsing) is currently in Active Development.**
+```bash
+jeb search "apple.com"
+```
 
-The internal "AI Path" UI has been decentralized in this version to focus on the **Universal AI Bridge**. Developers can now connect any AI agent (Claude, GPT, Gemini) directly to the JEB background server (Port 3030) to automate browsing tasks.
+Output includes:
 
-## 📜 License
+* Page summary
+* Extracted entities
+* Interactive Node IDs
+* Structured semantic data
 
-Distributed under the Apache License 2.0. See `LICENSE` for more information.
 
----
-Created with precision by **Enmero Research**.  
-*Journey · Explore · Beyond* — [www.enmero.in](https://www.enmero.in)
+## Architecture
+
+**Frontend**
+
+* React 18 + Vite
+* Electron
+* TypeScript
+
+**Shadow Engine**
+
+* Headless Chromium worker
+* Semantic extraction protocol
+* Local AI Bridge server
+
+Two layers. One synchronized browsing experience.
+
+
+
+## Project Status
+
+**Version:** 0.1.0 (Alpha)
+
+### Working
+
+* Headless browsing
+* CLI semantic search
+* Node extraction
+* JSON structured output
+
+### In Progress
+
+* Multi-tab agent coordination
+* Persistent memory
+* Autonomous navigation layer
+
+Expect rapid iteration.
+
+
+
+## Contributing
+
+We welcome:
+
+* Feature improvements
+* Performance optimizations
+* Protocol experimentation
+* Documentation enhancements
+* AI agent integrations
+
+Open an issue or submit a pull request.
+
+
+
+## License
+
+Apache License 2.0
+Commercial use and modification permitted.
+
+Brand identifiers (“JEB”, “Enmero Research”) remain protected.
+
+
+## Philosophy
+
+we aim to create the next generation browser
+
+
+Built by **Enmero Research**
+[https://www.enmero.in](https://www.enmero.in)
+
+
+
