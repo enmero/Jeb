@@ -1,0 +1,32 @@
+{
+    "name": "jeb-browser",
+    "version": "0.1.0",
+    "description": "JEB — The Industrial Modern Browser with a Native AI Shadow Engine.",
+    "author": "Enmero Research (www.enmero.in)",
+    "license": "Apache-2.0",
+    "main": "dist-electron/main/index.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build && electron-builder",
+        "preview": "vite preview",
+        "electron:dev": "vite",
+        "electron:build": "vite build && electron-builder"
+    },
+    "dependencies": {
+        "@tabler/icons-react": "^3.29.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "@vitejs/plugin-react": "^4.3.3",
+        "concurrently": "^9.2.1",
+        "electron": "^33.2.1",
+        "electron-builder": "^25.1.8",
+        "typescript": "^5.6.3",
+        "vite": "^5.4.10",
+        "vite-plugin-electron": "^0.29.0",
+        "vite-plugin-electron-renderer": "^0.14.6"
+    }
+}
